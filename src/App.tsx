@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router ,Routes,Route } from 'react-router-dom'
 import { PublicLayout } from '@/layouts/public-layout'
 import HomePage from '@/routes/home'
@@ -13,6 +12,10 @@ import { CreateEditPage } from './routes/create-edit-page'
 import { MockLoadPage } from './routes/mock-load-page'
 import { MockInterviewPage } from './routes/mock-interview-page'
 import { Feedback } from './routes/feedback'
+import AboutPage from './routes/AboutPage'
+import ServicesPage from './routes/ServicesPage'
+import ContactPage from './routes/ContactPage'
+
 
 
 const App = () => {
@@ -23,6 +26,9 @@ const App = () => {
              {/* Add your routes here */}
              <Route element={<PublicLayout/>}>
                  <Route index element={<HomePage/>}/>
+                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/contact" element={<ContactPage />} />
              </Route>
 
              {/*authentication layout*/}
