@@ -28,20 +28,39 @@ const ServicesPage = () => {
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-zinc-900 dark:text-white">
           What <span className="text-indigo-600">MockAI</span> Offers
         </h1>
-
-        <div className="relative border-l-4 border-indigo-500 ml-4 space-y-10">
-          {services.map((service, index) => (
-            <div key={index} className="pl-6 relative">
-              <div className="absolute -left-3.5 top-1 w-6 h-6 rounded-full bg-indigo-500 border-4 border-white dark:border-zinc-900" />
-              <h3 className="text-xl font-semibold text-zinc-800 dark:text-white mb-1">
-                {index + 1}. {service.title}
-              </h3>
-              <p className="text-zinc-600 dark:text-zinc-400">
-                {service.description}
-              </p>
+        <div className="relative border-l-4 ml-4 space-y-10">
+           <div className="absolute -left-3.5 top-1 w-6 h-6 rounded-full bg-orange-500 border-4 border-white dark:border-zinc-900" />
+                <h3 className="text-xl font-semibold text-zinc-800 dark:text-white mb-1">
+                  1 Interview Preparation
+                      </h3>
+            <div className="relative border-l-4 border-indigo-500 ml-4 space-y-10">
+              {services.map((service, index) => (
+                <div key={index} className="pl-6 relative">
+                  <div className="absolute -left-3.5 top-1 w-6 h-6 rounded-full bg-indigo-500 border-4 border-white dark:border-zinc-900" />
+                  <h3 className="text-xl font-semibold text-zinc-800 dark:text-white mb-1">
+                    {index + 1}. {service.title}
+                  </h3>
+                  <p className="text-zinc-600 dark:text-zinc-400">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+      </div>
+      
+      <div className="relative border-l-4 ml-4 space-y-10">
+        <div className="absolute -left-3.5 top-1 w-6 h-6 rounded-full bg-orange-500 border-4 border-white dark:border-zinc-900" />
+        <h3 className="text-xl font-semibold text-zinc-800 dark:text-white mb-1">
+          2 AI Assistant
+        </h3>
+      </div>
+      <div className="relative border-l-4 ml-4 space-y-10">
+        <div className="absolute -left-3.5 top-1 w-6 h-6 rounded-full bg-orange-500 border-4 border-white dark:border-zinc-900" />
+        <h3 className="text-xl font-semibold text-zinc-800 dark:text-white mb-1">
+           3 Resume Building
+        </h3>
+     </div>
+
       </div>
     </section>
   );
