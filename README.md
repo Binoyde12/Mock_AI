@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# Mock_AI 🎤🤖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mock_AI is an AI-powered mock interview platform that simulates real-world interview experiences. It helps job seekers prepare confidently by generating questions based on job roles and analyzing user responses for improvement.
 
-Currently, two official plugins are available:
+## 🔥 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 [Deployed on Firebase](https://ai-mock-interview-2f5a4.web.app/)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧰 Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend**: React + TypeScript
+- **Build Tool**: Vite
+- **Package Manager**: pnpm
+- **Styling**: Tailwind CSS
+- **Linting**: ESLint
+- **Deployment**: Firebase Hosting
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/Binoyde12/Mock_AI.git
+cd Mock_AI
+pnpm install
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Visit `http://localhost:5173` to view it in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🛎️ Firebase Deployment
+
+To deploy the project to Firebase:
+
+1. Install Firebase CLI:
+```bash
+npm install -g firebase-tools
 ```
+
+2. Login to Firebase:
+```bash
+firebase login
+```
+
+3. Initialize Firebase in your project:
+```bash
+firebase init
+```
+Choose **Hosting**, then select your Firebase project and set the `dist` folder as the public directory (update if different). Configure it as a single-page app when prompted.
+
+4. Build your project:
+```bash
+pnpm build
+```
+
+5. Deploy:
+```bash
+firebase deploy
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Mock_AI/
+├── public/         # Static assets
+├── src/
+│   ├── components/ # Reusable UI components
+│   ├── pages/      # Main pages/screens
+│   ├── App.tsx     # App root
+│   └── main.tsx    # Entry point
+├── tailwind.config.ts
+├── index.html
+├── vite.config.ts
+└── pnpm-lock.yaml
+```
+
+---
+
+## 📜 Scripts
+
+| Command           | Description                      |
+|------------------|----------------------------------|
+| `pnpm dev`       | Start local dev server           |
+| `pnpm build`     | Build the app for production     |
+| `pnpm preview`   | Preview the production build     |
+| `pnpm lint`      | Run ESLint checks                |
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create your branch: `git checkout -b feature/awesome-feature`
+3. Commit your changes: `git commit -m "Add awesome feature"`
+4. Push it: `git push origin feature/awesome-feature`
+5. Open a Pull Request 🚀
+
+---
+
+## 🪪 License
+
+This project is licensed under the MIT License.
+
