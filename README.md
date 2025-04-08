@@ -1,4 +1,3 @@
-
 # Mock_AI 🎤🤖
 
 Mock_AI is an AI-powered mock interview platform that simulates real-world interview experiences. It helps job seekers prepare confidently by generating questions based on job roles and analyzing user responses for improvement.
@@ -33,6 +32,38 @@ pnpm dev
 ```
 
 Visit `http://localhost:5173` to view it in your browser.
+
+---
+
+## 🛎️ Firebase Deployment
+
+To deploy the project to Firebase:
+
+1. Install Firebase CLI:
+```bash
+npm install -g firebase-tools
+```
+
+2. Login to Firebase:
+```bash
+firebase login
+```
+
+3. Initialize Firebase in your project:
+```bash
+firebase init
+```
+Choose **Hosting**, then select your Firebase project and set the `dist` folder as the public directory (update if different). Configure it as a single-page app when prompted.
+
+4. Build your project:
+```bash
+pnpm build
+```
+
+5. Deploy:
+```bash
+firebase deploy
+```
 
 ---
 
