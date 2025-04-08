@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ai-mock-interview-2f5a4"
-  }
+    "default": "mock-interview-major",
+    "AI": "mock-interview-major"
+  },
+  "targets": {},
+  "etags": {}
 }

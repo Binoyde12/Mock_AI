@@ -58,7 +58,7 @@ const HomePage = () => {
 
           <div className="hidden md:block absolute w-80 bottom-4 right-4 px-4 py-2 rounded-md bg-white/60 backdrop-blur-md">
             <h2 className="text-neutral-800 dark:text-white font-semibold text-xl md:text-2xl mb-1">
-                MockAI Chatbot
+                MockAI Chatbot🤖
               </h2>
               <p className="text-sm md:text-base text-neutral-500 dark:text-neutral-400">
                 Your intelligent interview assistant powered by AI -Ask anything you want. 
