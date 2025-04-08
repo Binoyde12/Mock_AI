@@ -15,6 +15,9 @@ import { Feedback } from './routes/feedback'
 import AboutPage from './routes/AboutPage'
 import ServicesPage from './routes/ServicesPage'
 import ContactPage from './routes/ContactPage'
+import ExternalChatbotPage from './routes/external-chatbot'
+import ExternalResumeBuilderPage from './routes/external-resume-builder'
+
 
 
 
@@ -29,6 +32,10 @@ const App = () => {
                  <Route path="/about" element={<AboutPage />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/external-chatbot" element={<ExternalChatbotPage />} />
+                <Route path="/external-resume-builder" element={<ExternalResumeBuilderPage />} />
+
+                
              </Route>
 
              {/*authentication layout*/}

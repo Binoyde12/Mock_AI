@@ -15,4 +15,13 @@ export const MainRoutes = [
     label: "Services",
     href: "/services",
   },
+  {
+    label: "Try MockAI Chat",
+    href: "/external-chatbot",
+  },
+  {
+    label: "Resume Builder",
+    href: "/external-resume-builder",
+  },
+
 ];

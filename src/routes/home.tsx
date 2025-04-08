@@ -57,15 +57,18 @@ const HomePage = () => {
           </div>
 
           <div className="hidden md:block absolute w-80 bottom-4 right-4 px-4 py-2 rounded-md bg-white/60 backdrop-blur-md">
-            <h2 className="text-neutral-800 font-semibold">Developer</h2>
-            <p className="text-sm text-neutral-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              distinctio natus, quos voluptatibus magni sapiente.
-            </p>
+            <h2 className="text-neutral-800 dark:text-white font-semibold text-xl md:text-2xl mb-1">
+                MockAI Chatbot
+              </h2>
+              <p className="text-sm md:text-base text-neutral-500 dark:text-neutral-400">
+                Your intelligent interview assistant powered by AI -Ask anything you want. 
+              </p>
 
-            <Button className="mt-3">
-              Generate <Sparkles />
-            </Button>
+            <Link to={"/external-chatbot"} className="w-full">
+              <Button className="mt-3">
+                Generate <Sparkles />
+              </Button>
+            </Link>
           </div>
         </div>
     </Container>
