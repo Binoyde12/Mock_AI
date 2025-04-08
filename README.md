@@ -4,8 +4,7 @@ Mock_AI is an AI-powered mock interview platform that simulates real-world inter
 
 ## 🔥 Live Demo
 
-🚀 [Deployed on Firebase](https://your-firebase-app-url.com)  
-*(Replace with your actual Firebase link)*
+🚀 [Deployed on Firebase](https://ai-mock-interview-2f5a4.web.app/services)  
 
 ---
 
