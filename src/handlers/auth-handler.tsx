@@ -18,6 +18,10 @@ const AuthHandler =() => {
 
   useEffect(() => {
     const storeUserData = async () => {
+      if (!isSignedIn || !user) {
+        setLoading(false);
+        return;
+      }
       if(isSignedIn && user) {
         setLoading(true);
         try {

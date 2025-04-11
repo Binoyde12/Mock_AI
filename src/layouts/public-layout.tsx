@@ -8,10 +8,13 @@ export const PublicLayout = () => {
     <div className="w-full">
       {/*Handler to store the user data */}
       <AuthHandler/>
+      
       <Header/>
+      
       <Outlet/>
       {/* Footer component */}
       <Footer/>
+      
     </div>
   )
 }
